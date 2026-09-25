@@ -1,0 +1,1002 @@
+{
+  "schema_version": "1.0",
+  "domain": {
+    "domain_id": "UNKNOWN",
+    "name": "",
+    "description": "Prepare a source-backed knowledge foundation for safe roadside waiting, disabled-vehicle exposure reduction, and ordinary motorist safety around towing and recovery operations.",
+    "version": "",
+    "status": ""
+  },
+  "knowledge_requirements": [
+    {
+      "requirement_id": "KR-001",
+      "requirement": "Safe stopping after a vehicle breakdown",
+      "description": "Safe stopping priorities when a vehicle becomes disabled or unsafe to continue driving.",
+      "priority": "Critical"
+    },
+    {
+      "requirement_id": "KR-002",
+      "requirement": "Getting the vehicle out of the traffic lane",
+      "description": "Whether and when a disabled vehicle should be moved out of a live traffic lane or carriageway.",
+      "priority": "Critical"
+    },
+    {
+      "requirement_id": "KR-003",
+      "requirement": "Highway and expressway roadside safety",
+      "description": "Roadside safety for disabled vehicles on high-speed, access-controlled, national-highway, and expressway environments.",
+      "priority": "Critical"
+    },
+    {
+      "requirement_id": "KR-004",
+      "requirement": "Passenger actions after stopping",
+      "description": "Immediate safe actions for passengers after a disabled vehicle stops.",
+      "priority": "Critical"
+    },
+    {
+      "requirement_id": "KR-005",
+      "requirement": "When it is safer to remain inside the vehicle",
+      "description": "Circumstances in which occupants may be safer remaining inside a stopped vehicle.",
+      "priority": "Critical"
+    },
+    {
+      "requirement_id": "KR-006",
+      "requirement": "When it is safer to exit the vehicle",
+      "description": "Circumstances in which occupants may need to leave a stopped vehicle and move to a safer location.",
+      "priority": "Critical"
+    },
+    {
+      "requirement_id": "KR-007",
+      "requirement": "Safe location for waiting for roadside assistance",
+      "description": "Safe waiting locations for drivers and passengers while roadside or recovery assistance is arranged.",
+      "priority": "Critical"
+    },
+    {
+      "requirement_id": "KR-008",
+      "requirement": "Hazard lights and warning devices",
+      "description": "Use of hazard warning lamps and other officially supported warning measures for a disabled vehicle.",
+      "priority": "Critical"
+    },
+    {
+      "requirement_id": "KR-009",
+      "requirement": "Visibility at night and in low visibility",
+      "description": "Visibility precautions in darkness, fog, rain, dust, or other low-visibility roadside conditions.",
+      "priority": "Critical"
+    },
+    {
+      "requirement_id": "KR-010",
+      "requirement": "Warning triangles and reflective devices",
+      "description": "Use, placement, legal requirements, and limitations of warning triangles or reflective devices.",
+      "priority": "High"
+    },
+    {
+      "requirement_id": "KR-011",
+      "requirement": "Standing near a disabled vehicle",
+      "description": "Risks and safe limitations for standing near, behind, or beside a disabled vehicle.",
+      "priority": "Critical"
+    },
+    {
+      "requirement_id": "KR-012",
+      "requirement": "Safe positioning relative to moving traffic",
+      "description": "Safe separation of people from live traffic, shoulders, barriers, and roadside hazards.",
+      "priority": "Critical"
+    },
+    {
+      "requirement_id": "KR-013",
+      "requirement": "Calling roadside assistance or towing services",
+      "description": "When to request roadside assistance, recovery, towing, highway patrol, police, or emergency support.",
+      "priority": "High"
+    },
+    {
+      "requirement_id": "KR-014",
+      "requirement": "Information to provide roadside or towing services",
+      "description": "Location, vehicle, hazard, passenger, and accessibility information required by roadside-assistance or recovery services.",
+      "priority": "High"
+    },
+    {
+      "requirement_id": "KR-015",
+      "requirement": "Approaching or interacting with a tow truck",
+      "description": "Safe behaviour while a tow truck or recovery vehicle approaches or works near the disabled vehicle.",
+      "priority": "High"
+    },
+    {
+      "requirement_id": "KR-016",
+      "requirement": "Safe behaviour during vehicle recovery",
+      "description": "What ordinary motorists and passengers should do while recovery personnel work around the vehicle.",
+      "priority": "Critical"
+    },
+    {
+      "requirement_id": "KR-017",
+      "requirement": "Vehicle loading onto a tow truck",
+      "description": "Bystander safety during loading of a vehicle onto a recovery vehicle.",
+      "priority": "High"
+    },
+    {
+      "requirement_id": "KR-018",
+      "requirement": "Vehicle unloading from a tow truck",
+      "description": "Bystander safety during unloading of a vehicle from a recovery vehicle.",
+      "priority": "High"
+    },
+    {
+      "requirement_id": "KR-019",
+      "requirement": "Safety during vehicle towing",
+      "description": "Ordinary motorist safety considerations when a vehicle is being towed.",
+      "priority": "Critical"
+    },
+    {
+      "requirement_id": "KR-020",
+      "requirement": "Passenger safety during towing",
+      "description": "Safe passenger arrangements while a vehicle is being towed or recovered.",
+      "priority": "Critical"
+    },
+    {
+      "requirement_id": "KR-021",
+      "requirement": "When passengers must not remain in a vehicle being towed",
+      "description": "Circumstances and legal or operator restrictions affecting occupants in a towed vehicle.",
+      "priority": "Critical"
+    },
+    {
+      "requirement_id": "KR-022",
+      "requirement": "Towing on highways and high-speed roads",
+      "description": "Additional safety risks and escalation needs for recovery or towing on highways and expressways.",
+      "priority": "Critical"
+    },
+    {
+      "requirement_id": "KR-023",
+      "requirement": "Preventing secondary collisions",
+      "description": "Actions intended to reduce secondary collision risk around a disabled vehicle or recovery operation.",
+      "priority": "Critical"
+    },
+    {
+      "requirement_id": "KR-024",
+      "requirement": "Vehicle cannot be moved",
+      "description": "Safe escalation where a vehicle cannot be moved from an active lane or dangerous location.",
+      "priority": "Critical"
+    },
+    {
+      "requirement_id": "KR-025",
+      "requirement": "Stranded in a dangerous location",
+      "description": "Escalation for locations such as blind curves, intersections, tunnels, bridges, steep slopes, flood-prone areas, or unsafe roadside environments.",
+      "priority": "Critical"
+    },
+    {
+      "requirement_id": "KR-026",
+      "requirement": "Night-time roadside breakdown safety",
+      "description": "Roadside waiting and recovery safety at night.",
+      "priority": "Critical"
+    },
+    {
+      "requirement_id": "KR-027",
+      "requirement": "Bad weather and poor visibility while stranded",
+      "description": "Additional roadside and recovery risks during rain, fog, dust storms, flooding, or other poor-visibility conditions.",
+      "priority": "Critical"
+    },
+    {
+      "requirement_id": "KR-028",
+      "requirement": "Pedestrian safety around towing and recovery operations",
+      "description": "Keeping drivers, passengers, pedestrians, and pets away from recovery equipment and live traffic.",
+      "priority": "High"
+    },
+    {
+      "requirement_id": "KR-029",
+      "requirement": "Unauthorized towing and roadside-assistance safety",
+      "description": "Verification of towing providers and response to potentially unauthorized or unsafe recovery offers.",
+      "priority": "High"
+    },
+    {
+      "requirement_id": "KR-030",
+      "requirement": "Emergency escalation when roadside assistance is unsafe or unavailable",
+      "description": "Conditions requiring police, highway patrol, fire/rescue, medical, or emergency escalation rather than waiting for ordinary towing support.",
+      "priority": "Critical"
+    },
+    {
+      "requirement_id": "KR-031",
+      "requirement": "India-specific roadside and towing considerations",
+      "description": "India-specific national and state highway guidance, authorized services, emergency escalation, and public road-safety rules.",
+      "priority": "Critical"
+    },
+    {
+      "requirement_id": "KR-032",
+      "requirement": "Legal and regulatory considerations for ordinary motorists in India",
+      "description": "Verified Indian legal, regulatory, insurance, or traffic-rule considerations relevant to disabled vehicles and towing.",
+      "priority": "High"
+    }
+  ],
+  "source_registry": [],
+  "knowledge_records": [],
+  "knowledge_gaps": [
+    {
+      "gap_id": "GAP-001",
+      "topic": "Live source verification",
+      "missing_information": "No authoritative source was live-opened and inspected in the present environment.",
+      "why_it_matters": "All roadside and towing instructions require source traceability before inclusion in a safety-critical RAG system.",
+      "recommended_followup": "Conduct a live verification pass beginning with MoRTH, NHAI, Government of India emergency-response sources, and official highway concessionaire guidance.",
+      "priority": "Critical"
+    },
+    {
+      "gap_id": "GAP-002",
+      "topic": "Stay inside versus exit a disabled vehicle",
+      "missing_information": "No India-specific authoritative decision rule has been verified for occupants on highways, shoulders, live lanes, or unsafe locations.",
+      "why_it_matters": "An incorrect universal instruction can expose occupants either to secondary collision or to vehicle hazards.",
+      "recommended_followup": "Verify Indian highway authority guidance and compare it with recognised international transport authority guidance.",
+      "priority": "Critical"
+    },
+    {
+      "gap_id": "GAP-003",
+      "topic": "Warning triangles, hazard lights, and reflective devices",
+      "missing_information": "No current Indian legal or official guidance has been verified for their mandatory use, safe placement, or placement distance.",
+      "why_it_matters": "Incorrect placement can expose a person to traffic; unsupported legal claims are unacceptable.",
+      "recommended_followup": "Verify the Central Motor Vehicles Rules, MoRTH publications, BIS materials where applicable, and official highway guidance.",
+      "priority": "Critical"
+    },
+    {
+      "gap_id": "GAP-004",
+      "topic": "Highway and expressway roadside waiting locations",
+      "missing_information": "No verified Indian public guidance defines where occupants should wait near barriers, shoulders, service lanes, or carriageways.",
+      "why_it_matters": "Roadside pedestrian exposure is a major secondary-collision risk.",
+      "recommended_followup": "Verify NHAI, expressway operator, highway-patrol, and state authority public guidance.",
+      "priority": "Critical"
+    },
+    {
+      "gap_id": "GAP-005",
+      "topic": "Passengers in a vehicle being towed",
+      "missing_information": "No verified Indian legal, regulatory, towing-provider, or safety authority rule has been found on passenger occupancy in a towed vehicle.",
+      "why_it_matters": "Passenger restraint, control, and safety may differ by tow method and road environment.",
+      "recommended_followup": "Verify India-specific transport rules and authorised towing-provider policies; do not provide a universal answer until verified.",
+      "priority": "Critical"
+    },
+    {
+      "gap_id": "GAP-006",
+      "topic": "Bystander safety during towing and recovery",
+      "missing_information": "No authoritative bystander-focused source has been verified for safe exclusion zones around tow-truck loading, winching, loading, unloading, and recovery equipment.",
+      "why_it_matters": "Recovery operations involve moving vehicles, ramps, cables, and live traffic.",
+      "recommended_followup": "Locate official transport, workplace-safety, police, or recognised recovery-industry material intended for public safety.",
+      "priority": "Critical"
+    },
+    {
+      "gap_id": "GAP-007",
+      "topic": "India-specific emergency and roadside escalation",
+      "missing_information": "Current official national and state highway assistance procedures, contact channels, and escalation criteria have not been verified.",
+      "why_it_matters": "RAAHAT must not state unverified emergency or highway contact information.",
+      "recommended_followup": "Verify current Government of India emergency-response, NHAI, and state traffic-police sources.",
+      "priority": "Critical"
+    },
+    {
+      "gap_id": "GAP-008",
+      "topic": "Unauthorized towing and towing scams",
+      "missing_information": "No authoritative Indian guidance has been verified on how motorists should identify authorised recovery providers or respond to unsolicited towing offers.",
+      "why_it_matters": "Motorists may face financial loss, unsafe recovery, or coercion.",
+      "recommended_followup": "Research official police, consumer-protection, insurer, and highway-authority guidance.",
+      "priority": "High"
+    },
+    {
+      "gap_id": "GAP-009",
+      "topic": "Night, fog, rain, and severe-weather roadside procedures",
+      "missing_information": "No authoritative India-specific instructions have been verified for occupant movement, warning measures, or recovery waiting during poor visibility.",
+      "why_it_matters": "Low visibility substantially increases secondary-collision risk.",
+      "recommended_followup": "Verify NHAI, state traffic police, NDMA, and recognised transport-authority materials.",
+      "priority": "Critical"
+    },
+    {
+      "gap_id": "GAP-010",
+      "topic": "Indian legal and regulatory requirements",
+      "missing_information": "No current Indian legal requirements regarding disabled-vehicle warnings, stopping restrictions, towing responsibility, and passenger safety have been inspected.",
+      "why_it_matters": "RAAHAT must distinguish safety guidance from enforceable legal obligations.",
+      "recommended_followup": "Verify current MoRTH notifications, Central Motor Vehicles Rules, and state-specific traffic regulations.",
+      "priority": "High"
+    }
+  ],
+  "conflicts": [],
+  "unsupported_claims": [],
+  "coverage": [
+    {
+      "knowledge_requirement": "KR-001: Safe stopping after a vehicle breakdown",
+      "source_ids": [],
+      "coverage": "Gap",
+      "authority": "None",
+      "india_specific": false,
+      "notes": "No live-inspected authoritative source is available in this dataset."
+    },
+    {
+      "knowledge_requirement": "KR-002: Getting the vehicle out of the traffic lane",
+      "source_ids": [],
+      "coverage": "Gap",
+      "authority": "None",
+      "india_specific": false,
+      "notes": "No verified India-specific rule or official guidance has been reviewed."
+    },
+    {
+      "knowledge_requirement": "KR-003: Highway and expressway roadside safety",
+      "source_ids": [],
+      "coverage": "Gap",
+      "authority": "None",
+      "india_specific": false,
+      "notes": "NHAI, MoRTH, and expressway-specific public guidance requires live verification."
+    },
+    {
+      "knowledge_requirement": "KR-004: Passenger actions after stopping",
+      "source_ids": [],
+      "coverage": "Gap",
+      "authority": "None",
+      "india_specific": false,
+      "notes": "No authoritative bystander-level passenger guidance has been verified."
+    },
+    {
+      "knowledge_requirement": "KR-005: When it is safer to remain inside the vehicle",
+      "source_ids": [],
+      "coverage": "Gap",
+      "authority": "None",
+      "india_specific": false,
+      "notes": "This is road-position and hazard dependent; source-backed rules are required."
+    },
+    {
+      "knowledge_requirement": "KR-006: When it is safer to exit the vehicle",
+      "source_ids": [],
+      "coverage": "Gap",
+      "authority": "None",
+      "india_specific": false,
+      "notes": "This is safety-critical and requires verified distinction by road and hazard type."
+    },
+    {
+      "knowledge_requirement": "KR-007: Safe location for waiting for roadside assistance",
+      "source_ids": [],
+      "coverage": "Gap",
+      "authority": "None",
+      "india_specific": false,
+      "notes": "No verified Indian roadside waiting-location guidance is available."
+    },
+    {
+      "knowledge_requirement": "KR-008: Hazard lights and warning devices",
+      "source_ids": [],
+      "coverage": "Gap",
+      "authority": "None",
+      "india_specific": false,
+      "notes": "Usage and legal requirements require verification against official Indian sources."
+    },
+    {
+      "knowledge_requirement": "KR-009: Visibility at night and in low visibility",
+      "source_ids": [],
+      "coverage": "Gap",
+      "authority": "None",
+      "india_specific": false,
+      "notes": "No official public guidance was live-verified."
+    },
+    {
+      "knowledge_requirement": "KR-010: Warning triangles and reflective devices",
+      "source_ids": [],
+      "coverage": "Gap",
+      "authority": "None",
+      "india_specific": false,
+      "notes": "Placement distance and legal requirements must not be inferred without regulatory evidence."
+    },
+    {
+      "knowledge_requirement": "KR-011: Standing near a disabled vehicle",
+      "source_ids": [],
+      "coverage": "Gap",
+      "authority": "None",
+      "india_specific": false,
+      "notes": "No source-backed safe-distance or positioning rule is available."
+    },
+    {
+      "knowledge_requirement": "KR-012: Safe positioning relative to moving traffic",
+      "source_ids": [],
+      "coverage": "Gap",
+      "authority": "None",
+      "india_specific": false,
+      "notes": "No verified authority has been inspected for barrier, shoulder, or traffic-lane positioning."
+    },
+    {
+      "knowledge_requirement": "KR-013: Calling roadside assistance or towing services",
+      "source_ids": [],
+      "coverage": "Gap",
+      "authority": "None",
+      "india_specific": false,
+      "notes": "Current official roadside-assistance and towing escalation routes require verification."
+    },
+    {
+      "knowledge_requirement": "KR-014: Information to provide roadside or towing services",
+      "source_ids": [],
+      "coverage": "Gap",
+      "authority": "None",
+      "india_specific": false,
+      "notes": "No official India-specific caller-information standard has been verified."
+    },
+    {
+      "knowledge_requirement": "KR-015: Approaching or interacting with a tow truck",
+      "source_ids": [],
+      "coverage": "Gap",
+      "authority": "None",
+      "india_specific": false,
+      "notes": "No verified public towing-interaction guidance is available."
+    },
+    {
+      "knowledge_requirement": "KR-016: Safe behaviour during vehicle recovery",
+      "source_ids": [],
+      "coverage": "Gap",
+      "authority": "None",
+      "india_specific": false,
+      "notes": "No bystander-level recovery-operation source has been live verified."
+    },
+    {
+      "knowledge_requirement": "KR-017: Vehicle loading onto a tow truck",
+      "source_ids": [],
+      "coverage": "Gap",
+      "authority": "None",
+      "india_specific": false,
+      "notes": "Loading-zone exclusion and passenger safety instructions need authoritative evidence."
+    },
+    {
+      "knowledge_requirement": "KR-018: Vehicle unloading from a tow truck",
+      "source_ids": [],
+      "coverage": "Gap",
+      "authority": "None",
+      "india_specific": false,
+      "notes": "Unloading-zone safety instructions need authoritative evidence."
+    },
+    {
+      "knowledge_requirement": "KR-019: Safety during vehicle towing",
+      "source_ids": [],
+      "coverage": "Gap",
+      "authority": "None",
+      "india_specific": false,
+      "notes": "No verified passenger-level towing safety evidence is available."
+    },
+    {
+      "knowledge_requirement": "KR-020: Passenger safety during towing",
+      "source_ids": [],
+      "coverage": "Gap",
+      "authority": "None",
+      "india_specific": false,
+      "notes": "Requires vehicle-, tow-method-, and jurisdiction-specific evidence."
+    },
+    {
+      "knowledge_requirement": "KR-021: When passengers must not remain in a vehicle being towed",
+      "source_ids": [],
+      "coverage": "Gap",
+      "authority": "None",
+      "india_specific": false,
+      "notes": "Potentially subject to legal, insurer, and recovery-provider restrictions; no official Indian source has been verified."
+    },
+    {
+      "knowledge_requirement": "KR-022: Towing on highways and high-speed roads",
+      "source_ids": [],
+      "coverage": "Gap",
+      "authority": "None",
+      "india_specific": false,
+      "notes": "No official India-specific highway recovery protocol has been inspected."
+    },
+    {
+      "knowledge_requirement": "KR-023: Preventing secondary collisions",
+      "source_ids": [],
+      "coverage": "Gap",
+      "authority": "None",
+      "india_specific": false,
+      "notes": "No verified Indian source supports specific warning and positioning measures."
+    },
+    {
+      "knowledge_requirement": "KR-024: Vehicle cannot be moved",
+      "source_ids": [],
+      "coverage": "Gap",
+      "authority": "None",
+      "india_specific": false,
+      "notes": "Emergency escalation procedure must be verified against official sources."
+    },
+    {
+      "knowledge_requirement": "KR-025: Stranded in a dangerous location",
+      "source_ids": [],
+      "coverage": "Gap",
+      "authority": "None",
+      "india_specific": false,
+      "notes": "No verified guidance exists for blind curves, tunnels, bridges, intersections, or slopes."
+    },
+    {
+      "knowledge_requirement": "KR-026: Night-time roadside breakdown safety",
+      "source_ids": [],
+      "coverage": "Gap",
+      "authority": "None",
+      "india_specific": false,
+      "notes": "No verified India-specific night-time roadside source is available."
+    },
+    {
+      "knowledge_requirement": "KR-027: Bad weather and poor visibility while stranded",
+      "source_ids": [],
+      "coverage": "Gap",
+      "authority": "None",
+      "india_specific": false,
+      "notes": "No official public guidance has been reviewed for rain, fog, dust, or flooding conditions."
+    },
+    {
+      "knowledge_requirement": "KR-028: Pedestrian safety around towing and recovery operations",
+      "source_ids": [],
+      "coverage": "Gap",
+      "authority": "None",
+      "india_specific": false,
+      "notes": "No verified source supports a safe exclusion-zone recommendation."
+    },
+    {
+      "knowledge_requirement": "KR-029: Unauthorized towing and roadside-assistance safety",
+      "source_ids": [],
+      "coverage": "Gap",
+      "authority": "None",
+      "india_specific": false,
+      "notes": "No official Indian source covering unauthorised recovery or towing scams has been verified."
+    },
+    {
+      "knowledge_requirement": "KR-030: Emergency escalation when roadside assistance is unsafe or unavailable",
+      "source_ids": [],
+      "coverage": "Gap",
+      "authority": "None",
+      "india_specific": false,
+      "notes": "Applicable Indian police, emergency, and highway escalation procedures require live verification."
+    },
+    {
+      "knowledge_requirement": "KR-031: India-specific roadside and towing considerations",
+      "source_ids": [],
+      "coverage": "Gap",
+      "authority": "None",
+      "india_specific": false,
+      "notes": "No India-specific source has been live verified."
+    },
+    {
+      "knowledge_requirement": "KR-032: Legal and regulatory considerations for ordinary motorists in India",
+      "source_ids": [],
+      "coverage": "Gap",
+      "authority": "None",
+      "india_specific": false,
+      "notes": "No Indian legal, regulatory, or official traffic-rule text has been inspected."
+    }
+  ],
+  "recommended_rag_corpus": {
+    "core_source_ids": [],
+    "supporting_source_ids": [],
+    "excluded_source_ids": []
+  },
+  "query_coverage": [
+    {
+      "query_id": "Q-001",
+      "query": "What should I do if my car breaks down on a highway?",
+      "language": "English",
+      "topic": "Highway roadside safety",
+      "intent": "Emergency",
+      "severity": "Critical",
+      "relevant_source_ids": [],
+      "expected_answer_points": [
+        "Assess whether the vehicle can be moved to the safest available position away from live traffic (not verified)",
+        "Use officially recommended warning and visibility measures (not verified)",
+        "Contact official highway or emergency assistance if occupants are exposed to traffic (not verified)"
+      ]
+    },
+    {
+      "query_id": "Q-002",
+      "query": "My car has stopped in the middle of the road. What should I do?",
+      "language": "English",
+      "topic": "Vehicle cannot be moved",
+      "intent": "Emergency",
+      "severity": "Critical",
+      "relevant_source_ids": [],
+      "expected_answer_points": [
+        "Warn approaching traffic using appropriate official measures (not verified)",
+        "Avoid attempting roadside repairs in a live traffic lane (not verified)",
+        "Escalate to police, highway patrol, or emergency support when collision risk is immediate (not verified)"
+      ]
+    },
+    {
+      "query_id": "Q-003",
+      "query": "Should I stay inside my car while waiting for a tow truck?",
+      "language": "English",
+      "topic": "Remain inside versus exit",
+      "intent": "Roadside Safety",
+      "severity": "Critical",
+      "relevant_source_ids": [],
+      "expected_answer_points": [
+        "Decide based on the vehicle's position, traffic exposure, fire risk, and availability of a protected waiting place (not verified)",
+        "Do not apply a universal stay-inside or exit rule to every road environment (not verified)",
+        "Follow directions from official emergency or highway responders when available (not verified)"
+      ]
+    },
+    {
+      "query_id": "Q-004",
+      "query": "Is it safe to stand behind my broken-down vehicle?",
+      "language": "English",
+      "topic": "Standing near disabled vehicle",
+      "intent": "Roadside Safety",
+      "severity": "Critical",
+      "relevant_source_ids": [],
+      "expected_answer_points": [
+        "Avoid standing in areas where approaching vehicles may strike the disabled vehicle or pedestrians (not verified)",
+        "Use a protected waiting location where one is available (not verified)",
+        "Do not stand in live traffic to place warnings or direct vehicles unless authorised and safe (not verified)"
+      ]
+    },
+    {
+      "query_id": "Q-005",
+      "query": "What should I do if my car cannot be moved off the highway?",
+      "language": "English",
+      "topic": "Disabled vehicle in highway lane",
+      "intent": "Emergency",
+      "severity": "Critical",
+      "relevant_source_ids": [],
+      "expected_answer_points": [
+        "Make the vehicle visible to approaching traffic using supported measures (not verified)",
+        "Request urgent highway or emergency assistance because the vehicle remains exposed to high-speed traffic (not verified)",
+        "Keep occupants out of unsafe traffic exposure where possible (not verified)"
+      ]
+    },
+    {
+      "query_id": "Q-006",
+      "query": "What information should I give a towing service?",
+      "language": "English",
+      "topic": "Calling towing assistance",
+      "intent": "Informational",
+      "severity": "High",
+      "relevant_source_ids": [],
+      "expected_answer_points": [
+        "Provide a precise location and direction of travel where possible (not verified)",
+        "Describe the vehicle, its position, and whether it blocks traffic (not verified)",
+        "Report hazards, passengers, injuries, smoke, or unsafe conditions (not verified)"
+      ]
+    },
+    {
+      "query_id": "Q-007",
+      "query": "Can passengers stay inside a car while it is being towed?",
+      "language": "English",
+      "topic": "Passenger safety during towing",
+      "intent": "Informational",
+      "severity": "Critical",
+      "relevant_source_ids": [],
+      "expected_answer_points": [
+        "Passenger occupancy during towing may depend on local rules, tow method, vehicle condition, and recovery-provider policy (not verified)",
+        "Passengers should follow the authorised recovery operator's safety instructions (not verified)",
+        "Do not assume passengers may remain inside a towed vehicle without verified guidance (not verified)"
+      ]
+    },
+    {
+      "query_id": "Q-008",
+      "query": "What should I do when a tow truck arrives?",
+      "language": "English",
+      "topic": "Tow-truck interaction",
+      "intent": "Roadside Safety",
+      "severity": "High",
+      "relevant_source_ids": [],
+      "expected_answer_points": [
+        "Confirm the provider and destination before handing over the vehicle where safe and applicable (not verified)",
+        "Keep passengers away from live traffic and recovery equipment (not verified)",
+        "Follow the recovery operator's safety instructions during loading (not verified)"
+      ]
+    },
+    {
+      "query_id": "Q-009",
+      "query": "Can I stand beside the vehicle while it is being loaded onto a tow truck?",
+      "language": "English",
+      "topic": "Vehicle loading safety",
+      "intent": "Roadside Safety",
+      "severity": "High",
+      "relevant_source_ids": [],
+      "expected_answer_points": [
+        "Keep clear of loading equipment, moving vehicles, cables, ramps, and recovery personnel (not verified)",
+        "Avoid standing between the disabled vehicle and the tow truck (not verified)",
+        "Wait in the location designated by the recovery operator when safe (not verified)"
+      ]
+    },
+    {
+      "query_id": "Q-010",
+      "query": "What should my family do while the car is being recovered?",
+      "language": "English",
+      "topic": "Passenger safety during recovery",
+      "intent": "Roadside Safety",
+      "severity": "High",
+      "relevant_source_ids": [],
+      "expected_answer_points": [
+        "Keep children, older passengers, and pets away from traffic and recovery equipment (not verified)",
+        "Use a protected waiting area if available (not verified)",
+        "Do not allow passengers to move around the recovery area without instruction (not verified)"
+      ]
+    },
+    {
+      "query_id": "Q-011",
+      "query": "My car broke down at night on an unlit road. What should I do?",
+      "language": "English",
+      "topic": "Night-time roadside safety",
+      "intent": "Emergency",
+      "severity": "Critical",
+      "relevant_source_ids": [],
+      "expected_answer_points": [
+        "Improve vehicle visibility using officially supported warning measures (not verified)",
+        "Avoid walking near traffic in darkness unless necessary for immediate safety (not verified)",
+        "Request assistance and report low visibility and the exact location (not verified)"
+      ]
+    },
+    {
+      "query_id": "Q-012",
+      "query": "My vehicle stopped near a blind curve. Should I wait beside it?",
+      "language": "English",
+      "topic": "Dangerous roadside location",
+      "intent": "Emergency",
+      "severity": "Critical",
+      "relevant_source_ids": [],
+      "expected_answer_points": [
+        "A blind curve creates elevated collision risk for a stopped vehicle and pedestrians (not verified)",
+        "Use warning measures only if they can be deployed without exposing a person to traffic (not verified)",
+        "Seek urgent official assistance if the vehicle cannot be moved (not verified)"
+      ]
+    },
+    {
+      "query_id": "Q-013",
+      "query": "Should I put a warning triangle behind my car after a breakdown?",
+      "language": "English",
+      "topic": "Warning triangles",
+      "intent": "Informational",
+      "severity": "High",
+      "relevant_source_ids": [],
+      "expected_answer_points": [
+        "Follow Indian legal and official guidance on whether and when warning triangles are required (not verified)",
+        "Do not enter live traffic to place a triangle if doing so is unsafe (not verified)",
+        "Triangle placement distance must not be guessed without source-backed road-specific guidance (not verified)"
+      ]
+    },
+    {
+      "query_id": "Q-014",
+      "query": "How far away from traffic should I wait after my car breaks down?",
+      "language": "English",
+      "topic": "Safe waiting location",
+      "intent": "Informational",
+      "severity": "Critical",
+      "relevant_source_ids": [],
+      "expected_answer_points": [
+        "Use a protected location away from moving traffic when one is available (not verified)",
+        "Do not rely on an unsourced universal distance rule (not verified)",
+        "Follow instructions from highway, police, or recovery personnel (not verified)"
+      ]
+    },
+    {
+      "query_id": "Q-015",
+      "query": "Can I use any tow truck that stops and offers help?",
+      "language": "English",
+      "topic": "Unauthorized towing safety",
+      "intent": "Informational",
+      "severity": "High",
+      "relevant_source_ids": [],
+      "expected_answer_points": [
+        "Verify the service provider through an official, insurer, manufacturer, or authorised roadside-assistance channel where possible (not verified)",
+        "Confirm destination, charges, and vehicle handover details before authorising recovery where safe (not verified)",
+        "Escalate to police or official assistance if the situation appears coercive or unsafe (not verified)"
+      ]
+    },
+    {
+      "query_id": "Q-016",
+      "query": "What should I do if the tow truck is loading my vehicle beside fast traffic?",
+      "language": "English",
+      "topic": "Highway recovery operation",
+      "intent": "Emergency",
+      "severity": "Critical",
+      "relevant_source_ids": [],
+      "expected_answer_points": [
+        "Stay clear of moving traffic and recovery equipment (not verified)",
+        "Keep passengers together in a safer waiting position (not verified)",
+        "Request official highway or emergency support if the recovery operation itself is exposed to unsafe traffic conditions (not verified)"
+      ]
+    },
+    {
+      "query_id": "Q-017",
+      "query": "\u0939\u093e\u0908\u0935\u0947 \u092a\u0930 \u0917\u093e\u0921\u093c\u0940 \u0916\u0930\u093e\u092c \u0939\u094b \u091c\u093e\u090f \u0924\u094b \u0915\u094d\u092f\u093e \u0915\u0930\u0928\u093e \u091a\u093e\u0939\u093f\u090f?",
+      "language": "Hindi",
+      "topic": "Highway roadside safety",
+      "intent": "Emergency",
+      "severity": "Critical",
+      "relevant_source_ids": [],
+      "expected_answer_points": [
+        "\u092f\u0926\u093f \u0938\u0902\u092d\u0935 \u0939\u094b \u0924\u094b \u0917\u093e\u0921\u093c\u0940 \u0915\u094b \u091f\u094d\u0930\u0948\u092b\u093f\u0915 \u0932\u0947\u0928 \u0938\u0947 \u0938\u0941\u0930\u0915\u094d\u0937\u093f\u0924 \u091c\u0917\u0939 \u092a\u0930 \u0932\u0947 \u091c\u093e\u090f\u0902 (not verified)",
+        "\u0917\u093e\u0921\u093c\u0940 \u0915\u094b \u0926\u093f\u0916\u093e\u0908 \u0926\u0947\u0928\u0947 \u092f\u094b\u0917\u094d\u092f \u092c\u0928\u093e\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f \u0906\u0927\u093f\u0915\u093e\u0930\u093f\u0915 \u091a\u0947\u0924\u093e\u0935\u0928\u0940 \u0909\u092a\u093e\u092f \u0905\u092a\u0928\u093e\u090f\u0902 (not verified)",
+        "\u0939\u093e\u0908\u0935\u0947 \u0938\u0939\u093e\u092f\u0924\u093e \u092f\u093e \u0906\u092a\u093e\u0924\u0915\u093e\u0932\u0940\u0928 \u0938\u0947\u0935\u093e \u0938\u0947 \u0938\u0902\u092a\u0930\u094d\u0915 \u0915\u0930\u0947\u0902 \u092f\u0926\u093f \u091f\u094d\u0930\u0948\u092b\u093f\u0915 \u0915\u093e \u0924\u0924\u094d\u0915\u093e\u0932 \u0916\u0924\u0930\u093e \u0939\u094b (not verified)"
+      ]
+    },
+    {
+      "query_id": "Q-018",
+      "query": "\u0917\u093e\u0921\u093c\u0940 \u0938\u0921\u093c\u0915 \u0915\u0947 \u092c\u0940\u091a \u092e\u0947\u0902 \u092c\u0902\u0926 \u0939\u094b \u0917\u0908 \u0939\u0948, \u0915\u094d\u092f\u093e \u0915\u0930\u0947\u0902?",
+      "language": "Hindi",
+      "topic": "Vehicle cannot be moved",
+      "intent": "Emergency",
+      "severity": "Critical",
+      "relevant_source_ids": [],
+      "expected_answer_points": [
+        "\u0906\u0928\u0947 \u0935\u093e\u0932\u0947 \u0935\u093e\u0939\u0928\u094b\u0902 \u0915\u094b \u091a\u0947\u0924\u093e\u0935\u0928\u0940 \u0926\u0947\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f \u0938\u0941\u0930\u0915\u094d\u0937\u093f\u0924 \u0914\u0930 \u0906\u0927\u093f\u0915\u093e\u0930\u093f\u0915 \u0909\u092a\u093e\u092f \u0905\u092a\u0928\u093e\u090f\u0902 (not verified)",
+        "\u091a\u0932\u0924\u0940 \u091f\u094d\u0930\u0948\u092b\u093f\u0915 \u0932\u0947\u0928 \u092e\u0947\u0902 \u092e\u0930\u092e\u094d\u092e\u0924 \u0915\u0930\u0928\u0947 \u0915\u0940 \u0915\u094b\u0936\u093f\u0936 \u0928 \u0915\u0930\u0947\u0902 (not verified)",
+        "\u0917\u093e\u0921\u093c\u0940 \u0928 \u0939\u091f \u0938\u0915\u0947 \u0924\u094b \u0924\u0941\u0930\u0902\u0924 \u0938\u0939\u093e\u092f\u0924\u093e \u092f\u093e \u0906\u092a\u093e\u0924\u0915\u093e\u0932\u0940\u0928 \u0938\u0947\u0935\u093e \u0915\u094b \u0938\u0942\u091a\u093f\u0924 \u0915\u0930\u0947\u0902 (not verified)"
+      ]
+    },
+    {
+      "query_id": "Q-019",
+      "query": "\u091f\u094b \u091f\u094d\u0930\u0915 \u0906\u0928\u0947 \u0924\u0915 \u0917\u093e\u0921\u093c\u0940 \u0915\u0947 \u0905\u0902\u0926\u0930 \u092c\u0948\u0920\u0928\u093e \u091a\u093e\u0939\u093f\u090f \u092f\u093e \u092c\u093e\u0939\u0930 \u0928\u093f\u0915\u0932\u0928\u093e \u091a\u093e\u0939\u093f\u090f?",
+      "language": "Hindi",
+      "topic": "Remain inside versus exit",
+      "intent": "Roadside Safety",
+      "severity": "Critical",
+      "relevant_source_ids": [],
+      "expected_answer_points": [
+        "\u092b\u0948\u0938\u0932\u093e \u0917\u093e\u0921\u093c\u0940 \u0915\u0940 \u091c\u0917\u0939, \u091f\u094d\u0930\u0948\u092b\u093f\u0915, \u0906\u0917 \u0915\u0947 \u0916\u0924\u0930\u0947 \u0914\u0930 \u0938\u0941\u0930\u0915\u094d\u0937\u093f\u0924 \u092a\u094d\u0930\u0924\u0940\u0915\u094d\u0937\u093e \u0938\u094d\u0925\u093e\u0928 \u092a\u0930 \u0928\u093f\u0930\u094d\u092d\u0930 \u0915\u0930\u0924\u093e \u0939\u0948 (not verified)",
+        "\u0939\u0930 \u0938\u094d\u0925\u093f\u0924\u093f \u092e\u0947\u0902 \u092c\u093e\u0939\u0930 \u0928\u093f\u0915\u0932\u0928\u093e \u092f\u093e \u0905\u0902\u0926\u0930 \u0930\u0939\u0928\u093e \u0938\u0939\u0940 \u0928\u0939\u0940\u0902 \u092e\u093e\u0928\u093e \u091c\u093e \u0938\u0915\u0924\u093e (not verified)",
+        "\u092e\u094c\u0915\u0947 \u092a\u0930 \u092e\u094c\u091c\u0942\u0926 \u0905\u0927\u093f\u0915\u0943\u0924 \u0905\u0927\u093f\u0915\u093e\u0930\u0940 \u092f\u093e \u0938\u0939\u093e\u092f\u0924\u093e \u0915\u0930\u094d\u092e\u0940 \u0915\u0947 \u0928\u093f\u0930\u094d\u0926\u0947\u0936 \u092e\u093e\u0928\u0947\u0902 (not verified)"
+      ]
+    },
+    {
+      "query_id": "Q-020",
+      "query": "\u0915\u094d\u092f\u093e \u091f\u094b \u0915\u0940 \u091c\u093e \u0930\u0939\u0940 \u0917\u093e\u0921\u093c\u0940 \u092e\u0947\u0902 \u092f\u093e\u0924\u094d\u0930\u0940 \u092c\u0948\u0920 \u0938\u0915\u0924\u0947 \u0939\u0948\u0902?",
+      "language": "Hindi",
+      "topic": "Passenger safety during towing",
+      "intent": "Informational",
+      "severity": "Critical",
+      "relevant_source_ids": [],
+      "expected_answer_points": [
+        "\u091f\u094b\u0907\u0902\u0917 \u0915\u0947 \u0926\u094c\u0930\u093e\u0928 \u092f\u093e\u0924\u094d\u0930\u0940 \u0935\u093e\u0939\u0928 \u092e\u0947\u0902 \u0930\u0939 \u0938\u0915\u0924\u0947 \u0939\u0948\u0902 \u092f\u093e \u0928\u0939\u0940\u0902, \u092f\u0939 \u0928\u093f\u092f\u092e \u0914\u0930 \u091f\u094b\u0907\u0902\u0917 \u092a\u0926\u094d\u0927\u0924\u093f \u092a\u0930 \u0928\u093f\u0930\u094d\u092d\u0930 \u0939\u094b \u0938\u0915\u0924\u093e \u0939\u0948 (not verified)",
+        "\u092c\u093f\u0928\u093e \u0938\u0924\u094d\u092f\u093e\u092a\u093f\u0924 \u0928\u093f\u092f\u092e \u0915\u0947 \u092f\u093e\u0924\u094d\u0930\u093f\u092f\u094b\u0902 \u0915\u094b \u091f\u094b \u0915\u0940 \u091c\u093e \u0930\u0939\u0940 \u0917\u093e\u0921\u093c\u0940 \u092e\u0947\u0902 \u092c\u0948\u0920\u0928\u0947 \u0915\u0940 \u0938\u0932\u093e\u0939 \u0928 \u0926\u0947\u0902 (not verified)",
+        "\u0905\u0927\u093f\u0915\u0943\u0924 \u0930\u093f\u0915\u0935\u0930\u0940 \u0911\u092a\u0930\u0947\u091f\u0930 \u0915\u0947 \u0938\u0941\u0930\u0915\u094d\u0937\u093e \u0928\u093f\u0930\u094d\u0926\u0947\u0936 \u0915\u093e \u092a\u093e\u0932\u0928 \u0915\u0930\u0947\u0902 (not verified)"
+      ]
+    },
+    {
+      "query_id": "Q-021",
+      "query": "\u0930\u093e\u0924 \u092e\u0947\u0902 \u0938\u0921\u093c\u0915 \u0915\u093f\u0928\u093e\u0930\u0947 \u092b\u0902\u0938 \u0917\u090f \u0939\u0948\u0902, \u092a\u0930\u093f\u0935\u093e\u0930 \u0915\u094b \u0915\u0939\u093e\u0901 \u0907\u0902\u0924\u091c\u093e\u0930 \u0915\u0930\u0928\u093e \u091a\u093e\u0939\u093f\u090f?",
+      "language": "Hindi",
+      "topic": "Night-time passenger safety",
+      "intent": "Emergency",
+      "severity": "Critical",
+      "relevant_source_ids": [],
+      "expected_answer_points": [
+        "\u091f\u094d\u0930\u0948\u092b\u093f\u0915 \u0938\u0947 \u0926\u0942\u0930 \u0914\u0930 \u0909\u092a\u0932\u092c\u094d\u0927 \u0939\u094b \u0924\u094b \u0938\u0941\u0930\u0915\u094d\u0937\u093f\u0924 \u0905\u0935\u0930\u094b\u0927 \u0915\u0947 \u092a\u0940\u091b\u0947 \u092a\u094d\u0930\u0924\u0940\u0915\u094d\u0937\u093e \u0915\u0930\u0947\u0902 (not verified)",
+        "\u092c\u091a\u094d\u091a\u094b\u0902 \u0914\u0930 \u092a\u093e\u0932\u0924\u0942 \u091c\u093e\u0928\u0935\u0930\u094b\u0902 \u0915\u094b \u0938\u0921\u093c\u0915 \u092f\u093e \u0930\u093f\u0915\u0935\u0930\u0940 \u0915\u094d\u0937\u0947\u0924\u094d\u0930 \u0915\u0947 \u092a\u093e\u0938 \u0928 \u091c\u093e\u0928\u0947 \u0926\u0947\u0902 (not verified)",
+        "\u0938\u091f\u0940\u0915 \u0932\u094b\u0915\u0947\u0936\u0928 \u092c\u0924\u093e\u0915\u0930 \u0938\u0939\u093e\u092f\u0924\u093e \u092e\u093e\u0902\u0917\u0947\u0902 (not verified)"
+      ]
+    },
+    {
+      "query_id": "Q-022",
+      "query": "\u091f\u094b \u091f\u094d\u0930\u0915 \u0917\u093e\u0921\u093c\u0940 \u0932\u094b\u0921 \u0915\u0930 \u0930\u0939\u093e \u0939\u0948, \u0915\u094d\u092f\u093e \u092e\u0948\u0902 \u092a\u093e\u0938 \u0916\u0921\u093c\u093e \u0930\u0939 \u0938\u0915\u0924\u093e \u0939\u0942\u0902?",
+      "language": "Hindi",
+      "topic": "Tow-truck loading safety",
+      "intent": "Roadside Safety",
+      "severity": "High",
+      "relevant_source_ids": [],
+      "expected_answer_points": [
+        "\u0932\u094b\u0921\u093f\u0902\u0917 \u0930\u0948\u0902\u092a, \u0915\u0947\u092c\u0932, \u0935\u093e\u0939\u0928 \u0914\u0930 \u091f\u094b \u091f\u094d\u0930\u0915 \u0915\u0947 \u092c\u0940\u091a \u0916\u0921\u093c\u0947 \u0928 \u0939\u094b\u0902 (not verified)",
+        "\u0930\u093f\u0915\u0935\u0930\u0940 \u0915\u0930\u094d\u092e\u091a\u093e\u0930\u0940 \u0926\u094d\u0935\u093e\u0930\u093e \u092c\u0924\u093e\u090f \u0917\u090f \u0938\u0941\u0930\u0915\u094d\u0937\u093f\u0924 \u0938\u094d\u0925\u093e\u0928 \u092a\u0930 \u0930\u0939\u0947\u0902 (not verified)",
+        "\u091f\u094d\u0930\u0948\u092b\u093f\u0915 \u0914\u0930 \u091a\u0932 \u0930\u0939\u0947 \u0909\u092a\u0915\u0930\u0923\u094b\u0902 \u0938\u0947 \u0926\u0942\u0930\u0940 \u092c\u0928\u093e\u090f \u0930\u0916\u0947\u0902 (not verified)"
+      ]
+    },
+    {
+      "query_id": "Q-023",
+      "query": "Highway par car breakdown ho gayi, ab kya karein?",
+      "language": "Hinglish",
+      "topic": "Highway roadside safety",
+      "intent": "Emergency",
+      "severity": "Critical",
+      "relevant_source_ids": [],
+      "expected_answer_points": [
+        "Agar safely possible ho to vehicle ko live lane se bahar le jaane ka assess karein (not verified)",
+        "Hazard aur approved warning measures use karein (not verified)",
+        "Highway assistance ko location aur traffic risk ke saath call karein (not verified)"
+      ]
+    },
+    {
+      "query_id": "Q-024",
+      "query": "Tow truck aane tak car ke andar rehna safe hai?",
+      "language": "Hinglish",
+      "topic": "Remain inside versus exit",
+      "intent": "Roadside Safety",
+      "severity": "Critical",
+      "relevant_source_ids": [],
+      "expected_answer_points": [
+        "Car ke andar rehna ya bahar jaana road position aur immediate hazards par depend karta hai (not verified)",
+        "Fire, smoke, live traffic exposure aur protected waiting area ko consider karein (not verified)",
+        "Official responder ke instruction ko priority dein (not verified)"
+      ]
+    },
+    {
+      "query_id": "Q-025",
+      "query": "Gaadi ko tow karte time passengers andar baith sakte hain?",
+      "language": "Hinglish",
+      "topic": "Passenger safety during towing",
+      "intent": "Informational",
+      "severity": "Critical",
+      "relevant_source_ids": [],
+      "expected_answer_points": [
+        "Passenger allowed hain ya nahi, yeh tow method aur rules par depend kar sakta hai (not verified)",
+        "Bina verified rule ke passengers ko towed vehicle mein rehne ki advice na dein (not verified)",
+        "Recovery operator ke safety instruction follow karein (not verified)"
+      ]
+    },
+    {
+      "query_id": "Q-026",
+      "query": "Car road ke beech band ho gayi hai aur traffic fast aa raha hai, kya karein?",
+      "language": "Hinglish",
+      "topic": "Live traffic lane breakdown",
+      "intent": "Emergency",
+      "severity": "Critical",
+      "relevant_source_ids": [],
+      "expected_answer_points": [
+        "Vehicle ko visible banane ke liye supported warning steps use karein (not verified)",
+        "Live traffic mein repair ya unsafe pushing avoid karein (not verified)",
+        "Immediate collision risk ho to emergency or highway support contact karein (not verified)"
+      ]
+    },
+    {
+      "query_id": "Q-027",
+      "query": "Raat mein fog ke andar gaadi roadside par ruk gayi hai, kya karna chahiye?",
+      "language": "Hinglish",
+      "topic": "Low-visibility roadside safety",
+      "intent": "Emergency",
+      "severity": "Critical",
+      "relevant_source_ids": [],
+      "expected_answer_points": [
+        "Vehicle visibility improve karne ke official measures use karein (not verified)",
+        "Fog mein road par chal kar traffic ya warning placement risk na lein (not verified)",
+        "Assistance ko poor visibility aur exact location ke baare mein batayein (not verified)"
+      ]
+    },
+    {
+      "query_id": "Q-028",
+      "query": "Recovery truck ke paas bachchon aur pets ko kahan rakhna chahiye?",
+      "language": "Hinglish",
+      "topic": "Pedestrian and passenger safety",
+      "intent": "Roadside Safety",
+      "severity": "High",
+      "relevant_source_ids": [],
+      "expected_answer_points": [
+        "Children aur pets ko traffic aur recovery equipment se door rakhein (not verified)",
+        "Unhe recovery operation ke beech ya vehicle ke paas na jaane dein (not verified)",
+        "Ek responsible adult unke saath rahe (not verified)"
+      ]
+    },
+    {
+      "query_id": "Q-029",
+      "query": "Unknown tow truck driver meri car le jaane ko bol raha hai, kya karun?",
+      "language": "Hinglish",
+      "topic": "Unauthorized towing safety",
+      "intent": "Emergency",
+      "severity": "High",
+      "relevant_source_ids": [],
+      "expected_answer_points": [
+        "Provider identity aur authorisation verify karne ki koshish karein (not verified)",
+        "Destination aur charges confirm kiye bina vehicle handover na karein where safe (not verified)",
+        "Situation unsafe ya coercive lage to official assistance ya police contact karein (not verified)"
+      ]
+    },
+    {
+      "query_id": "Q-030",
+      "query": "Bridge ya tunnel ke paas gaadi kharab ho jaye to tow ka wait kaise karein?",
+      "language": "Hinglish",
+      "topic": "Dangerous restricted location",
+      "intent": "Emergency",
+      "severity": "Critical",
+      "relevant_source_ids": [],
+      "expected_answer_points": [
+        "Bridge, tunnel aur restricted locations mein traffic exposure ko high risk maan kar emergency support seek karein (not verified)",
+        "Vehicle ko move karna sirf tab consider karein jab officially supported aur safely possible ho (not verified)",
+        "Passengers ko road aur recovery zone se door rakhein (not verified)"
+      ]
+    }
+  ],
+  "human_review_required": [
+    {
+      "review_id": "IMP-001",
+      "topic": "Implementation Note",
+      "conflict": "Do not ingest any query expected-answer point marked '(not verified)' as production knowledge. These points are evaluation placeholders identifying the type of authoritative answer required."
+    },
+    {
+      "review_id": "IMP-002",
+      "topic": "Implementation Note",
+      "conflict": "No source-backed knowledge record should be generated until the source is opened, the exact claim is inspected, the applicable road environment is recorded, and the source URL is confirmed."
+    },
+    {
+      "review_id": "IMP-003",
+      "topic": "Implementation Note",
+      "conflict": "Keep roadside safety distinct from DOMAIN-004 Vehicle Breakdown: this domain should cover occupant exposure to traffic, waiting safely, assistance interaction, towing, and recovery operations."
+    },
+    {
+      "review_id": "IMP-004",
+      "topic": "Implementation Note",
+      "conflict": "Route overlapping hazards to the relevant domain: fire or smoke to Fire Emergency, injuries to First Aid, tyre-specific actions to Tyre / Puncture, and mechanical fault diagnosis to Vehicle Breakdown."
+    },
+    {
+      "review_id": "IMP-005",
+      "topic": "Implementation Note",
+      "conflict": "Do not provide universal instructions for staying inside, leaving a vehicle, warning-triangle distance, passenger occupancy during towing, or towing legality without location-specific and source-backed evidence."
+    }
+  ]
+}
