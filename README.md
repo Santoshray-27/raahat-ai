@@ -1,389 +1,477 @@
-# RAAHAT (राहत) — Roadside Assistance & Help Anytime Tool
-### Intelligent Multi-Modal Emergency Triage & Autonomous Highway Assistance Network
+<div align="center">
 
-[![FastAPI](https://img.shields.io/badge/Backend-FastAPI-009688?style=flat-square&logo=fastapi)](backend)
-[![React](https://img.shields.io/badge/Frontend-React_19_TypeScript-61DAFB?style=flat-square&logo=react)](apps/web)
-[![Flutter](https://img.shields.io/badge/Mobile-Flutter_3.x-02569B?style=flat-square&logo=flutter)](apps/mobile)
-[![Gemini 2.0](https://img.shields.io/badge/AI-Gemini_2.0_Flash-4285F4?style=flat-square&logo=google)](ai)
-[![Sarvam AI](https://img.shields.io/badge/Voice-Sarvam_AI-FF6B6B?style=flat-square)](ai/voice)
-[![PostgreSQL](https://img.shields.io/badge/Database-PostgreSQL_PostGIS_pgvector-336791?style=flat-square&logo=postgresql)](backend)
-[![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
+<img src="apps/web/raahat-ai-web-main/public/image/logo.png" alt="RAAHAT logo" width="120">
 
-> **SquidHack 2026** · **Team Solution Savvy** (Problem Statement SW-17)  
-> *“Turning the next highway emergency into a clear, calm, and actionable next step.”*
+# RAAHAT
 
----
+### Roadside Assistance & Help Anytime Tool
 
-## 📌 Table of Contents
-- [Executive Overview](#-executive-overview)
-- [System Architecture](#-system-architecture)
-- [Core Features & Innovation](#-core-features--innovation)
-- [Autonomous Voice Calling Agent (Pending Deployment)](#-autonomous-voice-calling-agent-pending-deployment)
-- [Multi-Provider Resilient Fallback](#-multi-provider-resilient-fallback)
-- [Offline Emergency Infrastructure](#-offline-emergency-infrastructure)
-- [Repository Structure](#-repository-structure)
-- [API Reference](#-api-reference)
-- [Getting Started](#-getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Backend Setup](#1-fastapi-backend-setup)
-  - [Web Frontend Setup](#2-react-frontend-setup)
-  - [Mobile App Setup](#3-flutter-mobile-setup)
-- [Environment Variables](#-environment-variables)
-- [Testing & Quality Assurance](#-testing--quality-assurance)
-- [Team Solution Savvy](#-team-solution-savvy)
+AI-assisted emergency triage, nearby roadside services, safer route planning, and offline emergency packs for Indian highways.
 
----
+[![FastAPI](https://img.shields.io/badge/API-FastAPI-009688?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
+[![React](https://img.shields.io/badge/Web-React_18-61DAFB?logo=react&logoColor=20232a)](https://react.dev/)
+[![Flutter](https://img.shields.io/badge/Mobile-Flutter-02569B?logo=flutter&logoColor=white)](https://flutter.dev/)
+[![Python](https://img.shields.io/badge/Python-3.12+-3776AB?logo=python&logoColor=white)](https://www.python.org/)
+[![PostgreSQL](https://img.shields.io/badge/Data-PostgreSQL_%7C_PostGIS_%7C_pgvector-4169E1?logo=postgresql&logoColor=white)](https://www.postgresql.org/)
+[![Deploy](https://img.shields.io/badge/Deploy-Render-46E3B7?logo=render&logoColor=111827)](https://render.com/)
 
-## 📖 Executive Overview
+<br>
 
-**RAAHAT** (**R**oadside **A**ssistance **A**nd **H**elp **A**nytime **T**ool) is a production-grade, AI-driven emergency response platform engineered specifically for Indian national highways, remote expressways, and connectivity deadzones.
+**SquidHack 2026 · Team Solution Savvy · Problem Statement SW-17**
 
-When a vehicle breaks down or a collision occurs on an isolated highway stretch, drivers face severe stress, language barriers, fragmented emergency numbers, and intermittent cell connectivity. RAAHAT solves this with:
-1. **Multilingual AI Incident Triage** (Hindi, Hinglish, and English) with immediate first-aid guidance.
-2. **Deterministic Multi-Provider Geospatial Fallback** ensuring 100% service uptime even if primary map APIs rate-limit or fail.
-3. **Emergency Route Planning** with real-time corridor buffering for 24x7 emergency amenities.
-4. **Offline Emergency Data Packs** with cryptographically verified checksums for zero-connectivity scenarios.
-5. **Autonomous Voice Calling Agent** to negotiate and dispatch roadside services without driver panic.
+</div>
 
----
+> **Mission:** turn a stressful highway emergency into a clear, calm, and actionable next step.
 
-## 🏛 System Architecture
+## Contents
 
-```text
-                                 USER ENTRY POINTS
-                       ┌──────────────────────────────────┐
-                       │   React Web  │  Flutter Mobile   │
-                       │   (Apps/Web) │  (Apps/Mobile)    │
-                       └──────────────┬───────────────────┘
-                                      │ HTTP / JSON
-                                      ▼
-                      ┌────────────────────────────────────┐
-                      │        FastAPI Gateway / Core      │
-                      │  - Firebase Auth Token Validation  │
-                      │  - Unified Request ID & Telemetry  │
-                      │  - Standardized JSON Response Spec │
-                      └─────────────────┬──────────────────┘
-                                        │
-           ┌────────────────────────────┼───────────────────────────┐
-           ▼                            ▼                           ▼
-┌──────────────────────┐   ┌────────────────────────┐  ┌────────────────────────┐
-│   AI Orchestrator    │   │  Geospatial Provider   │  │   Offline Pack Engine  │
-│  - Gemini 2.0 Flash  │   │        Pipeline        │  │  - Tile & GeoJSON Gen  │
-│  - Sarvam AI (Voice) │   │ 1. Google Places/Routes│  │  - SHA-256 Checksums   │
-│  - Groq (Llama 3)    │   │ 2. Geoapify (Fallback) │  │  - SQLite Bundle Export│
-│  - Hybrid RAG Vector │   │ 3. OSM / OSRM (Free)   │  └────────────────────────┘
-│  - Heuristics Rules  │   │ 4. Curated Seed Store  │
-└──────────┬───────────┘   └────────────┬───────────┘
-           │                            │
-           └──────────────┬─────────────┘
-                          ▼
-        ┌──────────────────────────────────┐
-        │  PostgreSQL + PostGIS + pgvector │
-        │  - Highway Service Directory     │
-        │  - Vectorized First-Aid SOPs     │
-        │  - User Location History & Logs  │
-        └──────────────────────────────────┘
-```
+- [Why RAAHAT](#why-raahat)
+- [Features](#features)
+- [How it works](#how-it-works)
+- [Technology stack](#technology-stack)
+- [Project structure](#project-structure)
+- [Getting started](#getting-started)
+- [Configuration](#configuration)
+- [Using the application](#using-the-application)
+- [API overview](#api-overview)
+- [Deployment](#deployment)
+- [Testing and quality](#testing-and-quality)
+- [Roadmap](#roadmap)
+- [Contributing](#contributing)
+- [License and acknowledgments](#license-and-acknowledgments)
 
----
+## Why RAAHAT
 
-## 🚀 Core Features & Innovation
+Highway incidents are difficult to handle when the driver is under pressure, far from a city, facing a language barrier, or dealing with unreliable connectivity. RAAHAT brings the first response into one web and mobile experience:
 
-### 1. Emergency SOS & Intelligent Incident Triage
-- **Natural Language Input**: Handles chaotic, panicked inputs in pure Hindi, Hinglish, or English (e.g., *"Gaadi ka agla tyre phat gaya aur engine se dhuan nikal raha hai"*).
-- **Severity Extraction**: Instantly categorizes severity into `CRITICAL`, `HIGH`, `MEDIUM`, or `LOW`.
-- **Immediate First-Aid Protocols**: Provides life-saving "DOs and DO NOTs" (e.g., fuel leak safety, spinal injury precautions) derived from verified SOP knowledge bases (`RAG/DOMAIN-*.json`).
+- Describe an incident in natural language, including Hindi/Hinglish or English.
+- Receive severity classification, immediate safety guidance, and recommended actions.
+- Find nearby hospitals, police, ambulances, mechanics, towing, fuel, and puncture services.
+- Plan a route with emergency services discovered along the corridor.
+- Generate a downloadable offline pack for a region or route.
 
-### 2. Multi-Tier Geospatial Services Search
-- Finds verified highway services across 8 categories: `AMBULANCE`, `HOSPITAL`, `POLICE`, `FIRE_STATION`, `TOWING`, `MECHANIC`, `PUNCTURE`, `FUEL_STATION`.
-- Ranks candidate services by proximity, category match confidence, and verified 24/7 operating hours.
+The backend uses live providers when configured and can fall back through Geoapify, OpenStreetMap/Overpass, OSRM, and curated provider data. Set `USE_MOCKS=true` only when intentionally testing the mock provider.
 
-### 3. Safe Corridor Route Planner
-- Ingests start and destination coordinates (e.g., Indore to Bhopal).
-- Computes optimal highway routing and automatically queries emergency services along a customizable search buffer (default: 5 km corridor radius).
+## Features
 
-### 4. Telemetry & Live Diagnostics
-- Built-in provider monitoring at `/api/v1/health` and `/api/v1/providers/status`.
-- Tracks real-time API latency, active fallback counts, and provider degradation states.
+| Area | Capability |
+| --- | --- |
+| 🚨 Emergency triage | Classifies incident category and severity, returns first-aid/safety guidance, and recommends next actions. |
+| 🗺️ Nearby help | Searches for hospitals, police, ambulances, fire services, towing, mechanics, puncture repair, and fuel services. |
+| 🛣️ Safe routing | Plans origin-to-destination routes and attaches nearby emergency services from sampled corridor points. |
+| 📦 Offline readiness | Creates JSON emergency packs with provider data, emergency contacts, file metadata, and a SHA-256 checksum. |
+| 🎙️ Voice assistance | Accepts transcript or audio payloads and sends the recognized incident through the same triage pipeline. |
+| 🔐 Authentication | Supports Firebase ID-token verification in production and an explicit auth-disabled development mode. |
+| 📡 Diagnostics | Exposes health, provider status, and recent request telemetry for operational visibility. |
+| 📱 Multi-client UX | Includes a React/Vite web app and a Flutter mobile client sharing the FastAPI contract. |
 
----
+### Current boundaries
 
-## 📞 Autonomous Voice Calling Agent (Pending Deployment)
+- The voice endpoint currently returns triage data; `response_audio_base64` is not generated by the backend.
+- Offline packs are held in process memory and are therefore not durable across restarts.
+- The mobile client is present and wired for the shared API, but the web client is the primary documented local demo path.
+- No open-source license file is currently tracked in the repository.
 
-> ⚠️ **Current Deployment Status: PRE-DEPLOYMENT / ARCHITECTURAL PROTOTYPE**  
-> *The AI agentic decision flow, API contracts, verification tests, and stub endpoints are built and integrated into the backend. Live telephony dialing via PSTN/carrier SIP trunks is currently pending carrier onboarding and regulatory compliance clearance before production deployment.*
+## How it works
 
-### What is the Voice Calling Agent?
-During highway breakdowns, distressed drivers often cannot manually dial, negotiate prices, or articulate mile-marker coordinates to local tow-truck drivers or mechanics.
-
-The **RAAHAT Voice Calling Agent** is an autonomous conversational agent engineered to bridge this gap:
-
-```text
- ┌────────────────┐         ┌────────────────────────┐         ┌────────────────────────┐
- │ Stressed Driver│ ──────> │  AI Incident Analysis  │ ──────> │  Human-in-the-Loop     │
- │ "Call mechanic"│         │  Finds Nearest Vendor  │         │  Confirmation Modal    │
- └────────────────┘         └────────────────────────┘         └───────────┬────────────┘
-                                                                           │ User Approves
-                                                                           ▼
- ┌────────────────┐         ┌────────────────────────┐         ┌────────────────────────┐
- │ Real-Time Push │ <────── │ Structured Result Log  │ <────── │ Telephony Voice Bridge │
- │ ETA: 18 mins   │         │ Service Cost Negotiated│         │ (Sarvam STT/TTS + SIP) │
- └────────────────┘         └────────────────────────┘         └────────────────────────┘
-```
-
-### Key Technical Architecture
-1. **Agent Tool Definition**:
-   ```json
-   {
-     "tool": "call_provider",
-     "action": "CALL_VENDOR",
-     "target_provider_id": "prov_indore_crane_01",
-     "reason": "Request flatbed towing to nearest authorised service center",
-     "requires_confirmation": true
-   }
-   ```
-2. **Strict Human-In-The-Loop (HITL) Safety Gate**:
-   - The LLM cannot execute financial transactions or outbound phone calls autonomously without explicit user confirmation on the frontend UI.
-   - Backend enforces confirmation tokens before emitting outbound actions.
-3. **Bilingual Conversational Telephony (Hindi + English)**:
-   - Built on **Sarvam AI STT & TTS** models optimized for Indian accents, regional dialects, and vehicular background noise.
-   - The voice agent greets the service provider in Hindi:
-     > *"Namaste, main RAAHAT emergency platform se bol raha hoon. Ek yatri Indore-Bhopal Highway KM 42 par phanse hue hain. Kya aapka tow truck available hai?"*
-4. **Deterministic Intent Extraction & Dispatch Logging**:
-   - The agent listens to the vendor's spoken confirmation, extracts expected arrival time (ETA), and logs the interaction via `/api/v1/actions/dispatch`.
-5. **Backend Implementation Status**:
-   - Contract defined in `contracts/04_RAAHAT_API_CONTRACTS_INTEGRATION_GUIDE.md`
-   - Active endpoint: `POST /api/v1/actions/dispatch`
-   - Voice assistance endpoint: `POST /api/v1/voice/assist`
-   - Test suites: `backend/tests/test_provider_pipeline.py` (Tests 15 & 16)
-   - Telephony bridge: Outbound SIP webhook integration ready for carrier plug-in (Exotel/Twilio).
-
----
-
-## 🛡 Multi-Provider Resilient Fallback
-
-To prevent service failure during life-threatening crises, RAAHAT employs an automated 4-tier fallback matrix:
+### Architecture
 
 ```mermaid
-graph TD
-    A[Emergency Query Received] --> B{Google Places / Routes}
-    B -- Success --> Z[Return Verified Results]
-    B -- Timeout / Quota Exceeded --> C{Geoapify Platform}
-    C -- Success --> Z
-    C -- Timeout / Rate Limit --> D{OSM Overpass / OSRM}
-    D -- Success --> Z
-    D -- Empty / Unreachable --> E[Curated Verified Seed Store]
-    E --> Z
+flowchart LR
+    U[Driver] --> W[React Web]
+    U --> M[Flutter Mobile]
+    W -->|HTTPS JSON| API[FastAPI API]
+    M -->|HTTPS JSON| API
+
+    API --> AUTH[Firebase Admin verification]
+    API --> TRIAGE[Emergency orchestrator]
+    API --> GEO[Provider manager]
+    API --> RAG[RAG query service]
+    API --> OFF[Offline pack service]
+    API --> DB[(PostgreSQL<br/>PostGIS + pgvector)]
+
+    TRIAGE --> AI[Gemini / Sarvam / Groq<br/>with deterministic fallback]
+    TRIAGE --> GEO
+    RAG --> DB
+    OFF --> GEO
+    GEO --> G1[Geoapify]
+    GEO --> G2[OpenStreetMap / Overpass]
+    GEO --> G3[OSRM]
+    GEO --> G4[Curated providers]
 ```
 
-- **Ambulance & Towing**: Defaults immediately to verified seed records and direct national helplines (`108`, `112`), since OpenStreetMap often lacks direct roadside phone pins in rural India.
-- **Audit Compliance**: Completely passes zero-mock requirements (`NO_MOCK_AUDIT.md`) with zero hardcoded dummy records in production paths.
+### Primary emergency flow
 
----
+```mermaid
+flowchart TD
+    A[Open RAAHAT] --> B{Authenticated?}
+    B -- Yes --> C[Attach Firebase bearer token]
+    B -- Development mode --> D[Use dev identity]
+    C --> E[Submit incident message and location]
+    D --> E
+    E --> F[POST /api/v1/emergency-assistance]
+    F --> G[Classify category and severity]
+    G --> H[Generate safety guidance]
+    H --> I[Discover nearby services]
+    I --> J{Primary provider available?}
+    J -- Yes --> K[Return live results]
+    J -- No --> L[Try fallback providers and curated data]
+    L --> K
+    K --> N[Show guidance, services, and recommended actions]
+    N --> O{Need a route or offline pack?}
+    O -- Route --> P[POST /api/v1/routes/plan]
+    O -- Offline --> Q[POST /api/v1/offline-packs]
+    O -- Done --> R[Driver takes next step]
+```
 
-## 📴 Offline Emergency Infrastructure
+## Technology stack
 
-For complete cellular blackspots (ghats, deep rural corridors):
-- **Downloadable Emergency Packs**: Users pre-download micro-bundles covering specific highway segments (e.g., *NH-48 Mumbai-Pune*, *NH-52 Indore-Jaipur*).
-- **Cryptographic Verification**: Every pack is stamped with a SHA-256 integrity checksum to prevent corrupted downloads.
-- **Client-Side SQLite Cache**: Flutter mobile client stores regional hospital coordinates, police outposts, and emergency contact numbers directly on device storage.
+| Layer | Technologies |
+| --- | --- |
+| Web | [React 18](https://react.dev/), [TypeScript](https://www.typescriptlang.org/), [Vite](https://vitejs.dev/), React Router, Leaflet, Three.js, Lucide |
+| Mobile | [Flutter](https://flutter.dev/), Dart 3.13+, Provider, Geolocator, Sqflite, Firebase Auth |
+| API | [FastAPI](https://fastapi.tiangolo.com/), Pydantic v2, Uvicorn, HTTPX |
+| AI and voice | Google Generative AI, Groq, Sarvam integration hooks, deterministic classification fallback |
+| Geospatial | Geoapify, OpenStreetMap Overpass, OSRM, curated provider data |
+| Persistence | PostgreSQL, PostGIS, pgvector, SQLAlchemy async, Alembic |
+| Authentication | Firebase Admin SDK on the backend; Firebase Web SDK and Firebase Auth on clients |
+| Quality | Pytest, pytest-asyncio, TypeScript compiler, Vite production build |
+| Deployment | Render blueprint for the backend; Vercel SPA rewrite configuration for the web client |
 
----
-
-## 📂 Repository Structure
+## Project structure
 
 ```text
-raahat/
+raahat-ai/
 ├── apps/
-│   ├── web/                    # React 19 + Vite + TypeScript web application
-│   │   ├── src/
-│   │   │   ├── api/client.ts   # Unified API client & type contracts
-│   │   │   ├── pages/          # Dashboard, Emergency SOS, Nearby, Route Planner
-│   │   │   └── components/     # UI components & Antigravity navigation
-│   │   └── package.json
-│   └── mobile/                 # Flutter cross-platform mobile application
-│       ├── lib/                # Mobile screens, state management & offline storage
+│   ├── web/raahat-ai-web-main/     # React/Vite web client
+│   │   ├── src/                    # Pages, auth, API client, components
+│   │   ├── public/image/logo.png   # Web logo
+│   │   ├── package.json
+│   │   └── .env.example
+│   └── mobile/                     # Flutter client
+│       ├── lib/                    # Screens, services, auth, location
+│       ├── assets/images/logo.png
 │       └── pubspec.yaml
-├── backend/                    # FastAPI High-Performance Backend
+├── backend/
 │   ├── app/
-│   │   ├── api/v1/             # Endpoints (emergency, voice, routes, services, rag)
-│   │   ├── core/               # App configuration, security, database & telemetry
-│   │   ├── providers/          # Google, Geoapify, OSM & Curated provider modules
-│   │   ├── schemas/            # Pydantic v2 data transfer schemas
-│   │   └── services/           # AI orchestrator, ranking algorithms, offline pack builder
-│   ├── data/                   # Verified emergency seed database
-│   ├── tests/                  # 15+ comprehensive pytest integration test suites
+│   │   ├── api/v1/                 # FastAPI route modules
+│   │   ├── core/                   # Settings, security, database, telemetry
+│   │   ├── providers/              # Live and fallback geospatial providers
+│   │   ├── repositories/           # Database access
+│   │   ├── schemas/                # Pydantic request/response models
+│   │   └── services/               # Triage, routing, RAG, ranking
+│   ├── alembic/                    # Migration configuration
+│   ├── data/curated_providers.json
+│   ├── tests/
 │   ├── requirements.txt
+│   ├── .env.example
 │   └── DEPLOYMENT.md
-├── ai/                         # AI R&D, prompts, and agentic workflows
-│   ├── agentic/                # Autonomous agent tool definitions
-│   ├── rag/                    # Ingestion, retrieval, and prompt engineering
-│   └── voice/                  # Sarvam voice calling agent specifications
-├── RAG/                        # Verified domain emergency knowledge base (JSON)
-├── contracts/                  # Single source of truth API contracts & schema specs
-├── docs/                       # Technical audits, research benchmarks & reports
-└── render.yaml                 # Infrastructure as Code deployment blueprint
+├── RAG/                            # Emergency knowledge-base JSON documents
+├── contracts/                      # API contract documentation
+├── docs/screenshots/               # Verified UI screenshots
+├── scripts/                        # RAG ingestion and verification scripts
+├── render.yaml                     # Render backend blueprint
+└── .gitignore
 ```
 
----
-
-## 📡 API Reference
-
-Base URL: `http://localhost:8000/api/v1` (or production host)
-
-| Method | Endpoint | Description |
-|---|---|---|
-| `GET` | `/health` | System health, database connectivity & mode verification |
-| `POST` | `/emergency/triage` | Incident NLP classification, severity extraction & live nearby help |
-| `GET` | `/services/nearby` | Proximity-based lookup with category filtering & provider fallback |
-| `POST` | `/routes/plan` | Highway route calculation with emergency corridor services scanning |
-| `POST` | `/voice/assist` | Speech-to-Text transcript ingestion and voice response generator |
-| `POST` | `/actions/dispatch` | Dispatches roadside actions (`CALL_VENDOR`, `DISPATCH_TOWING`, etc.) |
-| `GET` | `/providers/status` | Real-time health metrics of external geospatial providers |
-| `POST` | `/offline-packs` | Compiles cryptographically verified offline data packages |
-| `POST` | `/rag/query` | Direct semantic search across first-aid & rescue SOP database |
-
----
-
-## 🛠 Getting Started
+## Getting started
 
 ### Prerequisites
-- **Python**: `3.12+`
-- **Node.js**: `18.x` or `20.x`
-- **Flutter SDK**: `3.x` (for mobile app)
-- **PostgreSQL**: `15+` with `postgis` and `pgvector` extensions (Optional for local testing; backend automatically degrades gracefully if DB is omitted).
 
----
+- Git
+- Python 3.12.8 (see `backend/runtime.txt`)
+- Node.js and npm
+- Flutter SDK with Dart 3.13.1 or newer for the mobile client
+- PostgreSQL with `postgis` and `vector` extensions for persistent production use
 
-### 1. FastAPI Backend Setup
+### 1. Clone the repository
 
 ```bash
-# 1. Navigate to backend directory
-cd backend
-
-# 2. Create and activate a virtual environment
-python -m venv venv
-# On Windows:
-venv\Scripts\activate
-# On Linux/macOS:
-source venv/bin/activate
-
-# 3. Install dependencies
-pip install -r requirements.txt
-
-# 4. Configure environment variables
-cp .env.example .env
-# Edit .env and supply your API keys (Gemini, Geoapify, etc.)
-
-# 5. Start the backend development server
-uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+git clone https://github.com/Santoshray-27/raahat-ai.git
+cd raahat-ai
 ```
-API Documentation will be live at:
-- **Swagger UI**: [http://localhost:8000/docs](http://localhost:8000/docs)
-- **ReDoc**: [http://localhost:8000/redoc](http://localhost:8000/redoc)
 
----
-
-### 2. React Frontend Setup
+### 2. Run the backend
 
 ```bash
-# 1. Navigate to the web application directory
-cd apps/web
+cd backend
+python -m venv .venv
 
-# 2. Install npm packages
+# macOS/Linux
+source .venv/bin/activate
+
+# Windows PowerShell
+# .venv\Scripts\Activate.ps1
+
+python -m pip install --upgrade pip
+pip install -r requirements.txt
+cp .env.example .env
+uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
+```
+
+The API is available at `http://localhost:8000`. Interactive documentation is available at [`/docs`](http://localhost:8000/docs) and [`/redoc`](http://localhost:8000/redoc).
+
+For a local no-database smoke test, leave `DATABASE_URL` unset. The application is designed to boot in degraded no-DB mode; database-backed features require a reachable PostgreSQL instance.
+
+### 3. Run the web client
+
+Open a second terminal from the repository root:
+
+```bash
+cd apps/web/raahat-ai-web-main
 npm install
-
-# 3. Launch development server
+cp .env.example .env
 npm run dev
 ```
-Open your browser at `http://localhost:5173`.
 
----
+Open the URL printed by Vite, normally `http://localhost:5173`.
 
-### 3. Flutter Mobile Setup
+### 4. Run the mobile client
 
 ```bash
-# 1. Navigate to the mobile app directory
 cd apps/mobile
-
-# 2. Fetch Flutter packages
 flutter pub get
-
-# 3. Run on connected device or emulator
 flutter run
 ```
 
----
+The mobile app uses the Firebase and API settings in its source configuration. Configure the backend URL for the target device before testing on a physical device.
 
-## ⚙️ Environment Variables
+## Configuration
 
-Create a `.env` file in the `backend/` directory:
+### Backend environment variables
 
-```ini
-# Core Configuration
-ENVIRONMENT=development
-PROJECT_NAME="RAAHAT API"
-VERSION="1.0.0"
-PORT=8000
-AUTH_DISABLED=true              # Set to false to enforce Firebase Auth tokens
-USE_MOCKS=false                 # Set to true only for offline testing
+Copy `backend/.env.example` to `backend/.env`. Values below are placeholders; never commit credentials.
 
-# AI & LLM Provider Keys
-GEMINI_API_KEY=your_gemini_api_key
-SARVAM_API_KEY=your_sarvam_api_key
-GROQ_API_KEY=your_groq_api_key
+| Variable | Purpose |
+| --- | --- |
+| `PROJECT_NAME`, `VERSION`, `API_V1_STR` | API metadata and route prefix. |
+| `ENVIRONMENT` | `development` enables reload behavior; use `production` for deployment. |
+| `USE_MOCKS` | Enables the mock provider when `true`; keep `false` for live/fallback behavior. |
+| `GEOAPIFY_API_KEY` | Geoapify places and routing provider key. |
+| `GEMINI_API_KEY`, `SARVAM_API_KEY`, `GROQ_API_KEY` | AI/voice provider credentials. |
+| `LLM_PROVIDER_ORDER`, `LLM_PROVIDER_TIMEOUT` | Provider order and per-provider timeout behavior. |
+| `FIREBASE_CREDENTIALS_PATH` | Path to a Firebase Admin service-account JSON file. |
+| `FIREBASE_CREDENTIALS_JSON` | Inline Firebase Admin credentials for deployment platforms. |
+| `AUTH_DISABLED` | `true` for local development identity; set `false` to require Firebase ID tokens. |
+| `DATABASE_URL` | Async PostgreSQL connection string for persistence and pgvector RAG. |
+| `CORS_ORIGINS` | Comma-separated web origins allowed by FastAPI CORS. |
+| `RAG_CORPUS_DIR` | Directory containing emergency knowledge-base documents. |
+| `RAG_EMBEDDING_MODEL`, `RAG_EMBEDDING_DIMENSION` | Embedding model and vector size. |
+| `RAG_RETRIEVAL_TOP_K`, `RAG_RETRIEVAL_MIN_SCORE` | RAG result count and similarity threshold. |
 
-# Geospatial Provider Keys
-GOOGLE_PLACES_API_KEY=your_google_places_key
-GOOGLE_ROUTES_API_KEY=your_google_routes_key
-GEOAPIFY_API_KEY=your_geoapify_key
+For production database setup, create the required extensions before migrations:
 
-# Database Connection (PostgreSQL + PostGIS + pgvector)
-DATABASE_URL=postgresql+asyncpg://postgres:password@localhost:5432/raahat_db
-
-# CORS Allowed Origins
-CORS_ORIGINS=http://localhost:5173,http://localhost:3000
+```sql
+CREATE EXTENSION IF NOT EXISTS postgis;
+CREATE EXTENSION IF NOT EXISTS vector;
 ```
 
----
+### Web environment variables
 
-## 🧪 Testing & Quality Assurance
+Copy `apps/web/raahat-ai-web-main/.env.example` to `.env`:
 
-RAAHAT includes a suite of end-to-end integration tests verifying every API contract, provider fallback, and error state.
+| Variable | Purpose |
+| --- | --- |
+| `VITE_API_URL` | Backend base URL, including `/api/v1`. |
+| `VITE_FIREBASE_API_KEY` | Firebase Web SDK configuration. |
+| `VITE_FIREBASE_AUTH_DOMAIN` | Firebase authentication domain. |
+| `VITE_FIREBASE_PROJECT_ID` | Firebase project identifier. |
+| `VITE_FIREBASE_STORAGE_BUCKET` | Firebase storage bucket. |
+| `VITE_FIREBASE_MESSAGING_SENDER_ID` | Firebase messaging sender ID. |
+| `VITE_FIREBASE_APP_ID` | Firebase Web app ID. |
+
+When Firebase Web values are empty, the client displays the development auth path. Do not use that mode for production.
+
+## Using the application
+
+The web client exposes these routes:
+
+| Route | Access | Purpose |
+| --- | --- | --- |
+| `/` | Public | Product landing page and emergency demo console |
+| `/login` | Public | Firebase login or development auth |
+| `/signup` | Public | Account creation |
+| `/app` | Protected | Emergency dashboard and triage |
+| `/nearby` | Protected | Nearby service directory |
+| `/route` | Protected | Safe route planner |
+
+Suggested demo flow:
+
+1. Start the backend and web client.
+2. Sign in through development auth or configure Firebase.
+3. Submit an incident such as `My tyre got punctured on the highway near Indore`.
+4. Review the severity, immediate guidance, recommended actions, and provider-sourced services.
+5. Use **Nearby** to filter service categories or **Route Planner** to plan a corridor.
+6. Generate an offline pack and download its JSON payload.
+
+### Screenshots
+
+The repository includes verified UI captures:
+
+| Dashboard | Nearby services | Route planner |
+| --- | --- | --- |
+| ![Dashboard triage](docs/screenshots/final-dashboard-result.png) | ![Nearby hospital](docs/screenshots/final-nearby-hospital.png) | ![Route planner](docs/screenshots/final-route.png) |
+
+Additional captures are available in [`docs/screenshots`](docs/screenshots), including authentication, offline packs, police results, and critical-incident triage.
+
+## API overview
+
+Base URL: `http://localhost:8000/api/v1`
+
+Successful responses use:
+
+```json
+{
+  "success": true,
+  "data": {},
+  "meta": {},
+  "error": null,
+  "request_id": "uuid"
+}
+```
+
+| Method | Endpoint | Auth | Purpose |
+| --- | --- | --- | --- |
+| `GET` | `/health` | No | Service and database health. |
+| `GET` | `/providers/status` | No | Provider configuration and status. |
+| `GET` | `/diagnostics` | No | Recent request telemetry. |
+| `POST` | `/emergency-assistance` | Optional | Triage an incident and return guidance/services. |
+| `GET` | `/services/nearby` | No | Query services by `lat`, `lng`, optional `radius_km`, `category`, and `limit`. |
+| `POST` | `/services/search` | No | Search with a structured location and `service_types` list. |
+| `POST` | `/routes/plan` | No | Plan a route from `origin` to `destination`. |
+| `GET` | `/routes/geocode` | No | Geocode a location using query parameter `q`. |
+| `POST` | `/offline-packs` | No | Create an in-memory offline pack from a bounding box or route ID. |
+| `GET` | `/offline-packs/{pack_id}` | No | Read an offline pack manifest. |
+| `GET` | `/offline-packs/{pack_id}/download` | No | Download the generated JSON pack. |
+| `POST` | `/voice/assist` | No | Triage transcript/audio payloads with optional location. |
+| `POST` | `/location/update` | No | Store the latest location for a user ID. |
+| `POST` | `/actions/dispatch` | No | Initialize a dispatch action for a target provider. |
+| `POST` | `/rag/query` | No | Run a pgvector-backed emergency knowledge search. |
+| `GET` | `/users/me` | Required | Return the authenticated Firebase user profile. |
+| `GET` | `/users/me/conversations` | Required | Return recent persisted conversations when a database is available. |
+
+### Example: emergency triage
 
 ```bash
-# Run backend test suite
+curl -X POST http://localhost:8000/api/v1/emergency-assistance \
+  -H 'Content-Type: application/json' \
+  -d '{
+    "message": "My tyre got punctured on the highway near Indore",
+    "language": "en",
+    "location": {
+      "latitude": 22.7196,
+      "longitude": 75.8577
+    }
+  }'
+```
+
+The `data` object contains `incident`, `guidance`, `services`, `recommended_actions`, `ai`, and optional `limitations`/`conversation_id` fields.
+
+### Example: nearby services
+
+```bash
+curl 'http://localhost:8000/api/v1/services/nearby?lat=22.7196&lng=75.8577&category=HOSPITAL&limit=5'
+```
+
+### Example: route planning
+
+```bash
+curl -X POST http://localhost:8000/api/v1/routes/plan \
+  -H 'Content-Type: application/json' \
+  -d '{
+    "origin": {"latitude": 22.7196, "longitude": 75.8577},
+    "destination": {"latitude": 23.2599, "longitude": 77.4126},
+    "prefer_safe_corridors": true
+  }'
+```
+
+For complete field definitions, see [`contracts/04_RAAHAT_API_CONTRACTS_INTEGRATION_GUIDE.md`](contracts/04_RAAHAT_API_CONTRACTS_INTEGRATION_GUIDE.md) and the generated FastAPI docs.
+
+## Deployment
+
+### Render backend
+
+[`render.yaml`](render.yaml) defines the backend service:
+
+- Root directory: `backend`
+- Build: `pip install -r requirements.txt`
+- Start: `uvicorn app.main:app --host 0.0.0.0 --port $PORT`
+- Health check: `/api/v1/health`
+- Runtime: Python 3.12.8
+
+Create the required Render environment variables from the backend configuration table. In production, set `AUTH_DISABLED=false`, provide `DATABASE_URL`, configure `CORS_ORIGINS`, and add provider/Firebase credentials through the platform secret manager.
+
+### Web deployment
+
+The web app is a standard Vite build:
+
+```bash
+cd apps/web/raahat-ai-web-main
+npm ci
+npm run build
+npm run preview
+```
+
+`vercel.json` contains the SPA rewrite needed for client-side routes. Set `VITE_API_URL` and Firebase Web variables in the deployment environment.
+
+There is currently no active GitHub Actions workflow in the repository; CI/CD is not configured in source control.
+
+## Testing and quality
+
+### Backend tests
+
+```bash
 cd backend
 pytest -v
 ```
 
-Expected output:
-```text
-tests/test_provider_pipeline.py::test_health_endpoint PASSED
-tests/test_provider_pipeline.py::test_emergency_triage_puncture PASSED
-tests/test_provider_pipeline.py::test_emergency_triage_critical_hindi PASSED
-tests/test_provider_pipeline.py::test_nearby_services_limit PASSED
-tests/test_provider_pipeline.py::test_safe_routes_indore_bhopal PASSED
-tests/test_provider_pipeline.py::test_offline_pack_creation PASSED
-tests/test_provider_pipeline.py::test_provider_status PASSED
-tests/test_provider_pipeline.py::test_voice_assist_with_explicit_location PASSED
-tests/test_provider_pipeline.py::test_voice_assist_without_location_uses_curated_fallback PASSED
-==================== 15 passed in ~35s ====================
+Pytest is configured in `backend/pytest.ini` with `tests/` as the test path and async session support.
+
+### Web verification
+
+```bash
+cd apps/web/raahat-ai-web-main
+npm run build
 ```
 
----
+This runs TypeScript compilation followed by the Vite production build. The repository also contains live verification notes in [`FINAL_CHECK.md`](FINAL_CHECK.md) and [`VERIFICATION.md`](VERIFICATION.md); those reports describe the environment and run in which they were produced.
 
-## 👥 Team Solution Savvy
+## Roadmap
 
-Developed with pride for **SquidHack 2026**:
+The following are proposed follow-ups, not promises of current functionality:
 
-| Team Member | Domain & Responsibilities |
-|---|---|
-| **Satwik Misra** | Backend Architecture, FastAPI, AI/RAG Engine, Multi-LLM Orchestration, Sarvam Voice Integration, Autonomous Voice Calling Agent |
-| **Santosh Ray** | React Frontend Development, UI/UX Engineering, API Integration, Production Deployment & QA |
-| **Saanvi Gupta** | Flutter Mobile Application, Cross-Platform UI, Offline Pack System & Field Research |
+- Persist offline packs in PostgreSQL or object storage instead of process memory.
+- Add automated CI for backend tests and the web build.
+- Complete production telephony/Sarvam audio integration for outbound assistance.
+- Add API contract generation and client SDK validation.
+- Add deployment-specific mobile API configuration and release documentation.
 
----
+## Contributing
 
-## 📜 License
-This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
+1. Fork the repository and create a focused branch.
+2. Make the smallest change that solves the issue.
+3. Run the relevant backend tests and/or web build.
+4. Update documentation and API contracts when behavior changes.
+5. Open a pull request with a clear description, testing notes, and screenshots for UI changes.
+
+Please avoid committing `.env` files, Firebase service-account keys, or other credentials.
+
+## License and acknowledgments
+
+No `LICENSE` file is currently tracked, so the project does not yet declare an open-source license. Add a license before external redistribution or reuse.
+
+Built by **Team Solution Savvy** for **SquidHack 2026**:
+
+- **Satwik Misra** — backend architecture, AI/RAG, LLM orchestration, and voice integration
+- **Santosh Ray** — web frontend, API integration, deployment, and QA
+- **Saanvi Gupta** — Flutter client, offline workflows, and field research
+
+Useful references:
+
+- [FastAPI documentation](https://fastapi.tiangolo.com/)
+- [React documentation](https://react.dev/)
+- [Flutter documentation](https://docs.flutter.dev/)
+- [Firebase Authentication](https://firebase.google.com/docs/auth)
+- [Geoapify documentation](https://apidocs.geoapify.com/)
+- [PostGIS documentation](https://postgis.net/documentation/)
+- [pgvector](https://github.com/pgvector/pgvector)
